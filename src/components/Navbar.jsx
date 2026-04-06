@@ -6,7 +6,7 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <nav classname="fixed top-0 w-full transition-all duration-300 bg-slate-950/20 backdrop-blur-sm border-b-amber ">
+    <nav className="fixed top-0 w-full transition-all duration-300 bg-slate-950/20 backdrop-blur-sm border-b-amber ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
         <div className="flex justify-between items-center h-14 sm:h-16 md:h-20">
           <div className=" flex items-center space-x-1 group cursor-pointer ">
@@ -46,13 +46,13 @@ export default function Navbar() {
             </a>
           </div>
           <button
-            className="md:hidden p-2 text-gary-300 hover:text-white"
+            className="md:hidden p-2 text-gary-300 hover:text-white "
             onClick={() => setMobileMenuOpen((prev) => !prev)}
           >
             {mobileMenuOpen ? (
               <X className="w-5 h-5 sm:w-6 sm:h-6" />
             ) : (
-              <Menu className="w-5 h-5 sm:w-6 sm:h-6" />
+              <Menu className="w-5 h-5 sm:w-6 sm:h-6 cursor-pointer" />
             )}
           </button>
         </div>
@@ -63,6 +63,7 @@ export default function Navbar() {
             <a
               href="#features"
               className="block text-gray-300 hover:text-white text-sm lg:text-base "
+              onClick={() => setMobileMenuOpen(false)}
             >
               Features
             </a>
@@ -70,6 +71,7 @@ export default function Navbar() {
             <a
               href="#Pricing"
               className="block text-gray-300 hover:text-white text-sm lg:text-base "
+              onClick={() => setMobileMenuOpen(false)}
             >
               Pricing
             </a>
@@ -77,6 +79,7 @@ export default function Navbar() {
             <a
               href="#Testimonials"
               className="block text-gray-300 hover:text-white text-sm lg:text-base "
+              onClick={() => setMobileMenuOpen(false)}
             >
               Testimonials
             </a>

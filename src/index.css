@@ -9,15 +9,36 @@
         animation-name: slideInFromTop;
     }
 
+    .slide-in-from-bottom{
+        animation-name: slideInFromBottom ;
+    }
+
     .duration-300{
         animation-duration: 300ms;
     }
+    .duration-200{
+        animation-duration: 200ms;
+    } 
+    .duration-700{
+        animation-duration: 700ms;
+    } 
 }
 
 @keyframes slideInFromTop {
     from {
         opacity: 0;
         transform: translateY(-1rem);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(1rem);
     }
     to{
         opacity: 1;
