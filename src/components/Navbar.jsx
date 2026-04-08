@@ -32,14 +32,14 @@ export default function Navbar() {
             </a>
 
             <a
-              href="#Pricing"
+              href="#pricing"
               className="text-gray-300 hover:text-white text-sm lg:text-base "
             >
               Pricing
             </a>
 
             <a
-              href="#Testimonials"
+              href="#testimonials"
               className="text-gray-300 hover:text-white text-sm lg:text-base "
             >
               Testimonials

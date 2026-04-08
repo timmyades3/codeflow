@@ -125,7 +125,7 @@ export default function Hero() {
                       style={nightOwl}
                       customStyle={{
                         margin: 0,
-                        borderRaduis: "8px",
+                        borderRadius: "8px",
                         fontSize: "11px",
                         lineHeight: "1.4",
                         height: "100%",
